@@ -21,7 +21,7 @@ public class WelcomeClass{
   System.out.println(" / \\/ \\/ \\/ \\/ \\/ \\");
   System.out.println("|-R--E--B--2--1--8-|");
   System.out.println(" \\ /\\ /\\ /\\ /\\ /\\ /");
-  System.out.println("   v   v   v   v   v   v");
+  System.out.println(" v v v v v v");
   System.out.println("This past summer I worked at a sleepaway camp as a lifeguard and a counselor.");
   }
 }
