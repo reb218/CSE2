@@ -16,6 +16,5 @@ public class TimePadding{
         System.out.println("Enter the number of seconds: ");
         seconds=myScanner.nextint();
         
-        
     }
 }
