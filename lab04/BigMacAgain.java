@@ -12,13 +12,21 @@ public class BigMacAgain{
     public static void main(String[]args){
         double costBigMacs;
         double costFries=2.15;
+        double cost2;
+        int cost3;
+        double cost4;
+        
         Scanner myScanner;  //Declare the scanner
         myScanner=new Scanner(System.in);
         System.out.println("Enter the number of BigMacs: ");//promts user to enter the number of BigMacs
         if (myScanner.hasNextInt()){
             int nBigMacs=myScanner.nextInt(); //the variable is the amount of BigMacs that the user inputs
             costBigMacs=nBigMacs*2.22;
-        System.out.println("You ordered "+nBigMacs+" BigMacs for a cost of "+nBigMacs+"*2.22= $"+costBigMacs);
+            cost2=costBigMacs*100;
+            cost3=(int)cost2;
+            cost4=cost3/100;
+            
+        System.out.println("You ordered "+nBigMacs+" BigMacs for a cost of "+nBigMacs+"*2.22= $"+cost4);
         }
         else{
             System.out.println("You did not enter an int");
@@ -30,17 +38,17 @@ public class BigMacAgain{
         String answer=myScanner.next();
         if (answer.equals("Y")){
         System.out.println("You ordered fries at a cost of $2.15");
-        System.out.println("The total cost of the meal is "+(costBigMacs+costFries));
+        System.out.println("The total cost of the meal is "+(cost4+costFries));
         }
         if (answer.equals("y")){
         System.out.println("You ordered fries at a cost of $2.15");
-        System.out.println("The total cost of the meal is "+(costBigMacs+costFries));
+        System.out.println("The total cost of the meal is "+(cost4+costFries));
         }  
         if (answer.equals(("N"))){
-        System.out.println("The total cost of the meal is "+costBigMacs);
+        System.out.println("The total cost of the meal is "+cost4);
         }
          if (answer.equals(("n"))){
-        System.out.println("The total cost of the meal is "+costBigMacs);
+        System.out.println("The total cost of the meal is "+cost4);
         }
         
     }
