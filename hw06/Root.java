@@ -20,11 +20,9 @@ public class Root{
             double low = 0;
             double high = 1+x;
             double middle = (high+low)/2;
-            int counter = 1;
             
             while ((high-x) > (0.0000001*(1+x))){
                 while((x-low) < (0.0000001*(1+x))){
-                     counter++;
                     if ((middle*middle)>x){
                     high = middle;
                     middle = (high+low)/2;
